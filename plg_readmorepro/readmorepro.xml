@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>System - Read More PRO</name>
+    <creationDate>July 2018</creationDate>
+    <version>1.0.2</version>
+    <author>JoomDev (Formerly GraphicAholic)</author>
+    <copyright>Copyright (C) 2020 Joomdev, Inc. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@joomdev.com</authorEmail>
+    <authorUrl>https://www.joomdev.com</authorUrl>
+
+	<description>
+	<![CDATA[
+		<div class="alert alert-info" style="font-weight: normal;">
+			<h3>JD Read More - Plugin</h3>
+			<p>With JD Read More  you'll be able to create an accordion Read More effect for your Joomla! Articles. JD Read More keeps all your article text on the same page showing 'some' of your article text and hides the rest based on how you configured the extension's setting.</p>
+			<p>JD Read More formerly known as Read More-PRO from Graphicaholic is now moved to JoomDev along with other Extensions. <strong>Check out the <a href="https://www.joomdev.com/graphicaholic" target="_blank">Announcement here.</a></strong></p>
+			<a href="https://www.joomdev.com/forum/jd-read-more" target="_blank">Support</a> | <span>Demo</span> | <a href="https://www.joomdev.com/products/extensions/jd-read-more" target="_blank">More Details</a>
+		</div>
+	]]>
+	</description>
+
+    <files>
+        <filename plugin="readmorepro">readmorepro.php</filename>
+        <filename plugin="readmorepro">index.html</filename>
+        <folder>js</folder>
+    </files>
+    <updateservers>
+        <server type="extension" priority="1" name="Read More PRO Update">https://joomdev.com/updates/readmoreproplugin.xml</server>
+    </updateservers>
+    <config>
+        <fields name="params">
+            <!-- General Settings -->
+            <fieldset name="basic" group="basic">
+                <field name="articlecontainerHeight" type="text" default="150" label="Read More article height" description="Enter height value only. Do not include &#39;px&#39; or &#39;em&#39; or &#39;%&#39; after value!" />
+                <field name="articlemediaHeight" type="text" default="22em" label="Read More Smartphone height" description="Include either the &#39;px&#39; or &#39;em&#39; after your specific value. Example: 22em or 22px." />
+                <field name="containerSpeed" type="text" default="1000" label="Container opening speed" description="" />
+                <field name="buttonAlign" type="list" default="left" label="Read More text alignment" description="Select to your specific needs.">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="center">Center</option>
+                </field>
+                <field name="readmoreText" type="text" default="Read More" label="Read More text" description="" />
+                <field name="readmorebackground" type="color" default="#eeeeee" label="Read More background color" description="Type in transparent for no background color" />
+                <field name="readmorebackgroundheight" type="text" default="" label="Read More background height" description="Height of background block. Include either px or em after value." />
+                <field name="readmorefontsize" type="text" default="" label="Read More font size" description="Use px or em after font size value. Blank value will use your template default body size" />
+                <field name="readmorefontweight" type="text" default="500" label="Read More font weight" description="Use whole values starting with 100 is light font weight with 900 being double bold." />
+                <field name="readlessText" type="text" default="Read Less" label="Read Less text" description="" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

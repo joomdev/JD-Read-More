@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="editors-xtd" method="upgrade">
+    <name>Button - Read More PRO</name>
+    <author>JoomDev (Formerly GraphicAholic)</author>
+    <creationDate>April 2013</creationDate>
+    <copyright>Copyright (C) 2020 Joomdev, Inc. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@joomdev.com</authorEmail>
+    <authorUrl>https://www.joomdev.com</authorUrl>
+    <version>1.0</version>
+    
+	<description>
+	<![CDATA[
+		<div class="alert alert-info" style="font-weight: normal;">
+			<h3>JD Read More - Plugin</h3>
+			<p>With JD Read More  you'll be able to create an accordion Read More effect for your Joomla! Articles. JD Read More keeps all your article text on the same page showing 'some' of your article text and hides the rest based on how you configured the extension's setting.</p>
+			<p>JD Read More formerly known as Read More-PRO from Graphicaholic is now moved to JoomDev along with other Extensions. <strong>Check out the <a href="https://www.joomdev.com/graphicaholic" target="_blank">Announcement here.</a></strong></p>
+			<a href="https://www.joomdev.com/forum/jd-read-more" target="_blank">Support</a> | <span>Demo</span> | <a href="https://www.joomdev.com/products/extensions/jd-read-more" target="_blank">More Details</a>
+		</div>
+	]]>
+	</description>
+    
+    <files>
+        <filename plugin="readmoreprobutton">readmoreprobutton.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Button - Read More Button">https://joomdev.com/updates/readmorebuttonplugin.xml</server>
+    </updateservers>
+    
+    <config>
+        <fields name="params">
+        </fields>
+    </config>
+</extension>

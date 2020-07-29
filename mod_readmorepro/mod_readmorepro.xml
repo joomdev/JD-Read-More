@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>JD Read More</name>
+	<creationDate>July 2018</creationDate>
+	<version>1.0.2</version>
+	<author>JoomDev (Formerly GraphicAholic)</author>
+	<copyright>Copyright (C) 2020 Joomdev, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>https://www.joomdev.com</authorUrl>
+
+	<description>
+	<![CDATA[
+		<div class="alert alert-info" style="font-weight: normal;">
+			<h3>JD Read More - Module</h3>
+			<p>With JD Read More  you'll be able to create an accordion Read More effect for your Joomla! Articles. JD Read More keeps all your article text on the same page showing 'some' of your article text and hides the rest based on how you configured the extension's setting.</p>
+			<p>JD Read More formerly known as Read More-PRO from Graphicaholic is now moved to JoomDev along with other Extensions. <strong>Check out the <a href="https://www.joomdev.com/graphicaholic" target="_blank">Announcement here.</a></strong></p>
+			<a href="https://www.joomdev.com/forum/jd-read-more" target="_blank">Support</a> | <span>Demo</span> | <a href="https://www.joomdev.com/products/extensions/jd-read-more" target="_blank">More Details</a>
+		</div>
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_readmorepro">mod_readmorepro.php</filename>
+		<folder>js</folder>
+		<filename>index.html</filename>
+		<filename>mod_readmorepro.xml</filename>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="JD Read More">https://joomdev.com/updates/readmorepromodule.xml</server>
+	</updateservers>
+	
+	<config>
+		<fields name="params">
+			<!-- General Settings -->
+			<fieldset name="basic" group="basic">
+				<field name="articlecontainerHeight" type="text" default="150" label="Read More article height" description="Enter height value only. Do not include PX, EM, or % after value!" />
+				<field name="articlemediaHeight" type="text" default="22em" label="Read More Smartphone height" description="Include either the &#39;px&#39; or &#39;em&#39; after your specific value. Example: 22em or 22px." />
+				<field name="containerSpeed" type="text" default="1000" label="Container opening speed" description="" />
+				<field name="buttonAlign" type="list" default="left" label="Read More text alignment" description="Select to your specific needs.">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+					<option value="center">Center</option>
+				</field>
+				<field name="readmoreText" type="text" default="Read More" label="Read More text" description="" />
+				<field name="readmorebackground" type="color" default="#eeeeee" label="Read More background color" description="Type in transparent for no background color" />
+				<field name="readmorebackgroundheight" type="text" default="" label="Read More background height" description="Height of background block. Include either px or em after value." />
+				<field name="readmorefontsize" type="text" default="" label="Read More font size" description="Use PX after font size value. Blank value will use your template default body size" />
+				<field name="readmorefontweight" type="text" default="500" label="Read More font weight" description="Use whole values starting with 100 is light font weight with 900 being double bold." />
+				<field name="readlessText" type="text" default="Read Less" label="Read Less text" description="" />
+				<field name="readlessbackground" type="color" default="#c0c0c0" label="Read Less background color" description="Type in transparent for no background color" />
+				<field name="readlessfontsize" type="text" default="" label="Read Less font size" description="Use PX after font size value. Blank value will use your template default body size" />
+				<field name="readlessfontweight" type="text" default="500" label="Read Less font weight" description="Use whole values starting with 100 is light font weight with 900 being double bold." />
+			</fieldset>
+			<!-- Advanced Settings -->
+			<fieldset name="advanced" group="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+				<field name="cache" type="radio" class="btn-group" default="1" label="Caching" description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+				<field name="documentation" type="docs" default="900" label="" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
